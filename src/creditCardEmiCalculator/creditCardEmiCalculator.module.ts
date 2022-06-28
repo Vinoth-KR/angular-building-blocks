@@ -1,12 +1,16 @@
 import { NgModule } from "@angular/core";
-import { BrowserModule } from "@angular/platform-browser";
+
+import { WidgetsModule } from "src/app/widgets/widgets.module";
 import { EmiCalculatorContainerComponent } from "./components/emiCalculatorContainer/emiCalculatorContainer.component";
-import { EmiCalculatorModule } from "./components/emiCalculator/emiCalculator.module";
-import { EmiBreakupModule } from "./components/emiBreakup/emiBreakup.module";
+import { EmiCalculatorComponent } from "./components/emiCalculator/emiCalculator.component";
+import { EmiBreakupComponent } from "./components/emiBreakup/emiBreakup.component";
+import { EmiSummaryComponent } from "./components/emiSummary/emiSummary.component";
+
+
 
 @NgModule({
-    declarations:[EmiCalculatorContainerComponent],  
-    imports:[EmiCalculatorModule, EmiBreakupModule], 
+    declarations:[EmiCalculatorContainerComponent, EmiCalculatorComponent, EmiBreakupComponent, EmiSummaryComponent],      
+    imports :[WidgetsModule],
     exports:[EmiCalculatorContainerComponent]    
 })
 export class CreditCardEmiCalculatorModule{

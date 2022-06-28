@@ -10,6 +10,7 @@ import { LabelComponent } from './components/label/label.component';
   ],
   imports: [
     CommonModule
-  ]
+  ],
+  exports:[LabelComponent]
 })
 export class WidgetsModule { }

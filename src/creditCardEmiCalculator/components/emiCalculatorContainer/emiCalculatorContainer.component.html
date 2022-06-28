@@ -3,7 +3,8 @@
     <table>
         <tr>
             <td>
-                <emi-calculator></emi-calculator>
+                <emi-calculator (onResultComputed)="onResultComputed_Hanlder($event)"></emi-calculator>
+                <emi-Summary [result] ="resultData"></emi-Summary>
             </td>
             <td>
                 <emi-breakup></emi-breakup>
